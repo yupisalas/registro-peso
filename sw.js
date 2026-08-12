@@ -1,5 +1,5 @@
 // Service worker: cachea la app para que funcione offline.
-const CACHE = "registro-peso-v10";
+const CACHE = "registro-peso-v11";
 const ASSETS = ["./", "./index.html", "./bundle.js", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", (e) => {
