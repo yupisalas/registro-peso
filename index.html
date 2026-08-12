@@ -19,6 +19,15 @@
 </head>
 <body>
   <div id="root"></div>
+  <script>
+    // Si algo falla al arrancar, mostrarlo en pantalla en vez de quedar en gris
+    window.addEventListener("error", function (e) {
+      var el = document.createElement("pre");
+      el.style.cssText = "color:#C4553B;padding:16px;font-size:12px;white-space:pre-wrap;";
+      el.textContent = "Error: " + (e.message || e.error);
+      document.body.prepend(el);
+    });
+  </script>
   <script src="./bundle.js"></script>
 </body>
 </html>
