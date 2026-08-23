@@ -1,5 +1,5 @@
 // Service worker: network-first, con activación inmediata de versiones nuevas.
-const CACHE = "registro-peso-v18";
+const CACHE = "registro-peso-v19";
 const ASSETS = ["./", "./index.html", "./bundle.js", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", (e) => {
